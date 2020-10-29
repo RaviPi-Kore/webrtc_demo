@@ -1,0 +1,101 @@
+    /* Click to call widget style */
+    
+    /* Widget width calculation:
+       - optional span before button with text: "call to someone"
+       - 'c2c_button' button with SVG icon and text: Call or Hangup
+       - 'c2c_span_message' used for phone short messages.
+    */
+    
+    #c2c_div {
+        padding: 10px;
+        width: 300px;
+    }
+    /* The same button used for call and hangup */
+    /* Increased button font size */
+    
+    #c2c_button {
+        font-size: 18px;
+        padding-top: 2px;
+    }
+    
+    #c2c_svg_icon {
+        width: 25px;
+        height: 20px;
+    }
+    
+    /* Hangup button look */
+    .c2c_button_hangup {
+        background-color: lightpink;
+        border-color: lightpink;
+    }
+    
+    /* Call button look */
+    .c2c_button_call {
+        background-color: lightgreen;
+        border-color: lightgreen;
+    }
+    
+    /* Change div color when call open */
+    .c2c_div_call_established {
+        background-color: SpringGreen;
+    }
+    
+    .c2c_div_disabled {
+        background-color: lightgray;
+    }
+        
+    /* SVG icon can be in one of the states: */
+    .c2c_icon_disabled {
+        transform: rotate(-90deg);
+        fill: gray;
+    }
+    
+    .c2c_icon_call {
+        transform: rotate(-90deg);
+        fill: DodgerBlue;
+    }
+    
+    .c2c_icon_hangup {
+        fill: DeepPink;
+    }
+    
+    .c2c_icon_calling {
+        animation: colorChange 4s infinite linear;
+    }
+    
+    /* icon color animation during calling */
+    @keyframes colorChange {
+        100% {
+            fill: #99e6ff;
+        }
+        90% {
+            fill: #66d9ff;
+        }
+        80% {
+            fill: #33ccff;
+        }
+        70% {
+            fill: #00bfff;
+        }
+        60% {
+            fill: #0099cc;
+        }
+        50% {
+            fill: #007399;
+        }
+        40% {
+            fill: #004d66;
+        }
+        30% {
+            fill: #007399;
+        }
+        20% {
+            fill: #0099cc;
+        }
+        10% {
+            fill: #00bfff;
+        }
+        0% {
+            fill: #33ccff;
+        }
+    }
