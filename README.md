@@ -1,6 +1,6 @@
 # Prerequisites 
 
-The installation will require a ngrock and simple webserver like nginx, apache etc..
+The installation will require a ngrok and simple webserver like nginx, apache etc..
 
 
 ### Local Setup
@@ -10,13 +10,13 @@ python -m SimpleHTTPServer 8000  //8000 is port
 ```
 * Run above command in the application directory.
 
-* If you don't have the paython you can use nginx or apache server to.
+* If you don't have the python you can use nginx or apache server to.
 
-* Once you deploy the code please use ngrock to get https url.
+* Once you deploy the code please use ngrok to get https url.
 ```sh
-./ngrock http 8000
+./ngrok http 8000
 ```
-* Now you can access the application with your <ngrockurl>/index.html
+* Now you can access the application with your <ngrokurl>/index.html
 
 
 
